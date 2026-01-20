@@ -1,6 +1,6 @@
 {
   "name": "paws-and-claws-landing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A playful and friendly pet grooming landing page template with Claymorphism style.",
   "main": "pet-grooming/index.html",
   "scripts": {
