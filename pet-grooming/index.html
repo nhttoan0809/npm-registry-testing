@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paws & Claws Grooming - Professional Pet Care</title>
+    <meta
+      name="description"
+      content="Professional pet grooming services with love and care. Book your pet's spa day today!"
+    />
+
+    <!-- Google Fonts: Fredoka + Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["Fredoka", "sans-serif"],
+              body: ["Nunito", "sans-serif"],
+            },
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#60A5FA",
+              cta: "#F97316",
+              bglight: "#F8FAFC",
+              textdark: "#1E293B",
+              border: "#E2E8F0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-body bg-bglight text-textdark">
+    <!-- Floating Navigation -->
+    <nav class="fixed top-4 left-4 right-4 z-50">
+      <div
+        class="max-w-7xl mx-auto bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border border-border px-6 py-4"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-primary to-cta rounded-xl flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <span class="font-heading font-bold text-xl text-textdark"
+              >Paws & Claws</span
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="#services"
+              class="text-textdark hover:text-primary transition-colors duration-200 font-medium"
+              >Services</a
+            >
+            <a
+              href="#about"
+              class="text-textdark hover:text-primary transition-colors duration-200 font-medium"
+              >About</a
+            >
+            <a
+              href="#testimonials"
+              class="text-textdark hover:text-primary transition-colors duration-200 font-medium"
+              >Reviews</a
+            >
+            <a
+              href="#contact"
+              class="text-textdark hover:text-primary transition-colors duration-200 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <a
+            href="#book"
+            class="bg-cta hover:bg-orange-600 text-white px-6 py-2.5 rounded-xl font-semibold transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
+          >
+            Book Now
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 md:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Content -->
+          <div class="text-center lg:text-left">
+            <h1
+              class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-textdark mb-6 leading-tight"
+            >
+              Your Pet's <span class="text-primary">Happy Place</span> 🐾
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed">
+              Professional grooming with a gentle touch. Because every pet
+              deserves to look and feel their best!
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#book"
+                class="bg-cta hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 cursor-pointer"
+              >
+                Book Appointment
+              </a>
+              <a
+                href="#services"
+                class="bg-white hover:bg-gray-50 text-textdark px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-200 shadow-lg border-2 border-border cursor-pointer"
+              >
+                View Services
+              </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div
+              class="mt-12 flex flex-wrap gap-8 justify-center lg:justify-start"
+            >
+              <div class="text-center">
+                <div class="font-heading font-bold text-3xl text-primary">
+                  5,000+
+                </div>
+                <div class="text-slate-600 font-medium">Happy Pets</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading font-bold text-3xl text-primary">
+                  4.9★
+                </div>
+                <div class="text-slate-600 font-medium">Rating</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading font-bold text-3xl text-primary">
+                  10+
+                </div>
+                <div class="text-slate-600 font-medium">Years Experience</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative">
+            <div class="rounded-3xl overflow-hidden shadow-2xl">
+              <img src="assets/hero-pets.png" alt="Happy groomed golden retriever and orange cat with bows" class="w-full h-auto">
+            </div>
+            <!-- Floating Badge -->
+            <div
+              class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 hidden lg:block"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-7 h-7 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-bold text-textdark">Certified</div>
+                  <div class="text-sm text-slate-600">Pet Groomers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 md:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2
+            class="font-heading font-bold text-4xl md:text-5xl text-textdark mb-4"
+          >
+            Our Grooming Services
+          </h2>
+          <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+            From basic baths to full spa treatments, we've got your pet covered!
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="service-card bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border-2 border-border hover:border-primary transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Full Grooming
+            </h3>
+            <p class="text-slate-600 mb-4">
+              Complete bath, haircut, nail trimming, and ear cleaning for a
+              fresh new look.
+            </p>
+            <div class="font-bold text-primary text-xl">From $45</div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="service-card bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 border-2 border-border hover:border-cta transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-cta rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Express Bath
+            </h3>
+            <p class="text-slate-600 mb-4">
+              Quick refresh bath with premium shampoo, blow dry, and brush out.
+            </p>
+            <div class="font-bold text-cta text-xl">From $30</div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="service-card bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 border-2 border-border hover:border-purple-500 transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Spa Treatment
+            </h3>
+            <p class="text-slate-600 mb-4">
+              Luxury spa experience with massage, conditioning treatment, and
+              aromatherapy.
+            </p>
+            <div class="font-bold text-purple-600 text-xl">From $65</div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="service-card bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 border-2 border-border hover:border-green-500 transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Puppy/Kitten Care
+            </h3>
+            <p class="text-slate-600 mb-4">
+              Gentle introduction to grooming for young pets. Positive first
+              experience!
+            </p>
+            <div class="font-bold text-green-600 text-xl">From $35</div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="service-card bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 border-2 border-border hover:border-pink-500 transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Special Care
+            </h3>
+            <p class="text-slate-600 mb-4">
+              For senior pets and those with special needs. Extra gentle and
+              patient care.
+            </p>
+            <div class="font-bold text-pink-600 text-xl">From $50</div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="service-card bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8 border-2 border-border hover:border-cyan-500 transition-all duration-300 cursor-pointer hover:shadow-xl"
+          >
+            <div
+              class="w-16 h-16 bg-cyan-500 rounded-2xl flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-textdark mb-3">
+              Add-ons
+            </h3>
+            <p class="text-slate-600 mb-4">
+              Teeth brushing, de-shedding treatment, cologne, and bow
+              accessories.
+            </p>
+            <div class="font-bold text-cyan-600 text-xl">From $10</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section
+      id="about"
+      class="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-orange-50"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2
+            class="font-heading font-bold text-4xl md:text-5xl text-textdark mb-4"
+          >
+            Why Pet Parents Choose Us
+          </h2>
+          <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+            More than just grooming—we provide a caring, stress-free experience
+            for your furry family members.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Benefit 1 -->
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-textdark mb-2">
+              Loving Care
+            </h3>
+            <p class="text-slate-600">
+              We treat every pet like our own with patience and compassion.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-cta"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-textdark mb-2">
+              Certified Pros
+            </h3>
+            <p class="text-slate-600">
+              All groomers are professionally trained and certified.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-textdark mb-2">
+              Flexible Hours
+            </h3>
+            <p class="text-slate-600">
+              Evening and weekend appointments available for your convenience.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-purple-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-textdark mb-2">
+              Safe Products
+            </h3>
+            <p class="text-slate-600">
+              Premium, pet-safe, and eco-friendly grooming products only.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 md:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2
+            class="font-heading font-bold text-4xl md:text-5xl text-textdark mb-4"
+          >
+            Happy Pet Parents Say
+          </h2>
+          <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+            Don't just take our word for it—hear from our amazing clients!
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg border border-border"
+          >
+            <div class="flex items-center gap-1 mb-4">
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+            </div>
+            <p class="text-slate-700 italic mb-6">
+              "My golden retriever Max absolutely loves coming here! The staff
+              is so gentle and caring. He comes out looking like a million bucks
+              every time!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg"
+              >
+                SM
+              </div>
+              <div>
+                <div class="font-bold text-textdark">Sarah Martinez</div>
+                <div class="text-sm text-slate-600">Max's Mom</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 shadow-lg border border-border"
+          >
+            <div class="flex items-center gap-1 mb-4">
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+            </div>
+            <p class="text-slate-700 italic mb-6">
+              "Best grooming service ever! They handled my anxious cat Luna with
+              such patience. She actually purrs when we arrive now. Highly
+              recommend!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-cta to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg"
+              >
+                JC
+              </div>
+              <div>
+                <div class="font-bold text-textdark">James Chen</div>
+                <div class="text-sm text-slate-600">Luna's Dad</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg border border-border"
+          >
+            <div class="flex items-center gap-1 mb-4">
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-yellow-400 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"
+                />
+              </svg>
+            </div>
+            <p class="text-slate-700 italic mb-6">
+              "Affordable, professional, and my puppy Bella always looks
+              adorable! The spa treatment is worth every penny. Will never go
+              anywhere else!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-green-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-lg"
+              >
+                EP
+              </div>
+              <div>
+                <div class="font-bold text-textdark">Emma Patel</div>
+                <div class="text-sm text-slate-600">Bella's Owner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section
+      id="book"
+      class="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-primary to-cta text-white"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-heading font-bold text-4xl md:text-5xl mb-6">
+          Ready to Pamper Your Pet?
+        </h2>
+        <p class="text-xl md:text-2xl mb-8 opacity-95">
+          Book your appointment today and give your furry friend the spa day
+          they deserve!
+        </p>
+
+        <!-- Booking Form -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 text-left shadow-2xl">
+          <form class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label
+                for="pet-name"
+                class="block text-textdark font-semibold mb-2"
+                >Pet's Name</label
+              >
+              <input
+                type="text"
+                id="pet-name"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark"
+                placeholder="Fluffy"
+              />
+            </div>
+
+            <div>
+              <label
+                for="pet-type"
+                class="block text-textdark font-semibold mb-2"
+                >Pet Type</label
+              >
+              <select
+                id="pet-type"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark cursor-pointer"
+              >
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="owner-name"
+                class="block text-textdark font-semibold mb-2"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="owner-name"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-textdark font-semibold mb-2"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark"
+                placeholder="(555) 123-4567"
+              />
+            </div>
+
+            <div>
+              <label
+                for="service"
+                class="block text-textdark font-semibold mb-2"
+                >Service</label
+              >
+              <select
+                id="service"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark cursor-pointer"
+              >
+                <option>Full Grooming</option>
+                <option>Express Bath</option>
+                <option>Spa Treatment</option>
+                <option>Puppy/Kitten Care</option>
+                <option>Special Care</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="date" class="block text-textdark font-semibold mb-2"
+                >Preferred Date</label
+              >
+              <input
+                type="date"
+                id="date"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark cursor-pointer"
+              />
+            </div>
+
+            <div class="md:col-span-2">
+              <label for="notes" class="block text-textdark font-semibold mb-2"
+                >Special Notes (Optional)</label
+              >
+              <textarea
+                id="notes"
+                rows="3"
+                class="w-full px-4 py-3 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-textdark"
+                placeholder="Any special needs or requests..."
+              ></textarea>
+            </div>
+
+            <div class="md:col-span-2">
+              <button
+                type="submit"
+                class="w-full bg-cta hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 cursor-pointer"
+              >
+                Book Appointment Now
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-6 text-center text-slate-600">
+            <p class="text-sm">
+              📞 Prefer to call? Reach us at
+              <span class="font-bold text-primary">(555) PAW-SPAW</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="bg-textdark text-white py-12 px-4 md:px-6 lg:px-8"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 bg-gradient-to-br from-primary to-cta rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <span class="font-heading font-bold text-xl">Paws & Claws</span>
+            </div>
+            <p class="text-slate-400">
+              Professional pet grooming with love and care since 2014.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-heading font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#services"
+                  class="text-slate-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-slate-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#book"
+                  class="text-slate-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                  >Book Now</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-heading font-bold text-lg mb-4">Contact</h3>
+            <ul class="space-y-2 text-slate-400">
+              <li>📍 123 Pet Street, Dogtown</li>
+              <li>📞 (555) PAW-SPAW</li>
+              <li>✉️ hello@pawsandclaws.com</li>
+            </ul>
+          </div>
+
+          <!-- Hours -->
+          <div>
+            <h3 class="font-heading font-bold text-lg mb-4">Business Hours</h3>
+            <ul class="space-y-2 text-slate-400">
+              <li>Mon-Fri: 8am - 7pm</li>
+              <li>Saturday: 9am - 6pm</li>
+              <li>Sunday: 10am - 4pm</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400"
+        >
+          <p>
+            &copy; 2026 Paws & Claws Grooming. All rights reserved. Made with ❤️
+            for pets.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const offset = 100; // Account for fixed navbar
+            const targetPosition = target.offsetTop - offset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Form submission handler
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(
+          "Thank you for booking! We'll contact you shortly to confirm your appointment. 🐾"
+        );
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
